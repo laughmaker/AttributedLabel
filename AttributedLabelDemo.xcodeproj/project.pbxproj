@@ -18,6 +18,9 @@
 		25FE52711752F72E00599A63 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FE52701752F72E00599A63 /* Default-568h@2x.png */; };
 		25FE52741752F72E00599A63 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25FE52721752F72E00599A63 /* MainStoryboard.storyboard */; };
 		25FE52771752F72E00599A63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FE52761752F72E00599A63 /* ViewController.m */; };
+		25FE52801752F75700599A63 /* AttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FE527F1752F75700599A63 /* AttributedLabel.m */; };
+		25FE52821752F7FB00599A63 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25FE52811752F7FB00599A63 /* CoreText.framework */; };
+		25FE52841752F80600599A63 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25FE52831752F80600599A63 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,10 @@
 		25FE52731752F72E00599A63 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		25FE52751752F72E00599A63 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		25FE52761752F72E00599A63 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		25FE527E1752F75700599A63 /* AttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedLabel.h; sourceTree = "<group>"; };
+		25FE527F1752F75700599A63 /* AttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributedLabel.m; sourceTree = "<group>"; };
+		25FE52811752F7FB00599A63 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		25FE52831752F80600599A63 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25FE52841752F80600599A63 /* QuartzCore.framework in Frameworks */,
+				25FE52821752F7FB00599A63 /* CoreText.framework in Frameworks */,
 				25FE525B1752F72E00599A63 /* UIKit.framework in Frameworks */,
 				25FE525D1752F72E00599A63 /* Foundation.framework in Frameworks */,
 				25FE525F1752F72E00599A63 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +65,9 @@
 		25FE524E1752F72E00599A63 = {
 			isa = PBXGroup;
 			children = (
+				25FE52831752F80600599A63 /* QuartzCore.framework */,
+				25FE52811752F7FB00599A63 /* CoreText.framework */,
+				25FE527D1752F75700599A63 /* AttriButedLabel */,
 				25FE52601752F72E00599A63 /* AttributedLabelDemo */,
 				25FE52591752F72E00599A63 /* Frameworks */,
 				25FE52581752F72E00599A63 /* Products */,
@@ -105,6 +117,15 @@
 				25FE52701752F72E00599A63 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		25FE527D1752F75700599A63 /* AttriButedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				25FE527E1752F75700599A63 /* AttributedLabel.h */,
+				25FE527F1752F75700599A63 /* AttributedLabel.m */,
+			);
+			path = AttriButedLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +197,7 @@
 				25FE52671752F72E00599A63 /* main.m in Sources */,
 				25FE526B1752F72E00599A63 /* AppDelegate.m in Sources */,
 				25FE52771752F72E00599A63 /* ViewController.m in Sources */,
+				25FE52801752F75700599A63 /* AttributedLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

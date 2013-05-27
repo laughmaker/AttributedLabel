@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AttributedLabel.h"
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet AttributedLabel *attributedLbl;
 
 @end

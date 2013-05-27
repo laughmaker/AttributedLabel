@@ -17,7 +17,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    [self.attributedLbl setColor:[UIColor greenColor] fromIndex:5 length:self.attributedLbl.text.length - 5];
+    
+    AttributedLabel *lbl = [[AttributedLabel alloc] initWithFrame:CGRectMake(60, 211, 120, 30)];
+    [lbl setText:@"makeLaugh"];
+    [lbl setTextColor:[UIColor brownColor]];
+    [lbl setFont:[UIFont boldSystemFontOfSize:18]];
+    [lbl setColor:[UIColor orangeColor] fromIndex:4 length:lbl.text.length - 4];
+    [self.view addSubview:lbl];
 }
 
 - (void)didReceiveMemoryWarning
