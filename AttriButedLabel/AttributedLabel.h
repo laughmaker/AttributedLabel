@@ -11,6 +11,8 @@
 
 @interface AttributedLabel : UILabel
 
+//以下三个属性重设text值后需要重新设置
+
 // 设置某段字的颜色
 - (void)setColor:(UIColor *)color fromIndex:(NSInteger)location length:(NSInteger)length;
 

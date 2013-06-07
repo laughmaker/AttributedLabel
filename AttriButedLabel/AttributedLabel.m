@@ -69,6 +69,8 @@
     else
     {
         self.attString = [[NSMutableAttributedString alloc] initWithString:text];
+        [self setFont:self.font];
+        [self setTextColor:self.textColor];
     }
 }
 
@@ -93,7 +95,7 @@
 - (void)setFont:(UIFont *)font
 {
     [super setFont:font];
-    
+
     [self setFont:font fromIndex:0 length:self.text.length];
 }
 
